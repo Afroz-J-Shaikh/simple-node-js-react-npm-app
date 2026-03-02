@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello Friends,
-          Deployed Simple React App.
+          Checking version, It is v1.
         </p>
         <a
           className="App-link"
