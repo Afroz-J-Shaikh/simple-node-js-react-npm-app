@@ -22,3 +22,6 @@ jobs:
 
       - name: run lint
         run: npm run lint -- --ignore-pattern "**/*.test.jsx"
+
+      - name: run test
+        run: npm test
