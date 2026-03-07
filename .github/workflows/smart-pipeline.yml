@@ -23,7 +23,7 @@ jobs:
       - name: run lint
         run: npm run lint -- --ignore-pattern "**/*.test.jsx"
 
-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -41,10 +41,10 @@ test:
       - name: run test
         run: npm test
 
-summary:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print pushed branch name
-      run: echo "Branch Name :" ${{ github.ref_name }}
-    - name: Print commit message
-      run: echo "Commit message :" ${{ github.event.head_commit.message }}
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print pushed branch name
+        run: echo "Branch Name :" ${{ github.ref_name }}
+      - name: Print commit message
+        run: echo "Commit message :" ${{ github.event.head_commit.message }}
